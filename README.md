@@ -33,12 +33,14 @@
       ],
     ),);
   ``` 
+  
+  
   ###### showDialog Syntax
      Like wise showCupertinoDialog widget same for Android.That is showDialog.
       * showDialog has contain mainly two property one is context and another is builder. Where context you have pass the widget context and builder where you               define the AlertDialog widget. 
       * AlertDialog widget has title where you can defein the alert title and ccontext where you can define the dialog message and list of action where you can
          close and perform a Alert dialog .      
-      ###### showDialog Syntax
+         
       ```
       showDialog(
       context: contex,
