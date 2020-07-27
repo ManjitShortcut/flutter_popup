@@ -140,8 +140,9 @@
   * It is best way to show it in andriod.
   * It has PopupMenuItem where user can indentified value.
   ###### PopupMenuButton Syntax
-   ```
-     Container(
+  
+     ```
+          Container(
             child: PopupMenuButton(
               onSelected: (FilterOption selectedValue) {
                 // setState(() {
@@ -157,12 +158,12 @@
                     value: FilterOption.FilterOptionFav),
                 PopupMenuItem(
                     child: Text("Show All"),
-                    value: FilterOption.FilterOptionAll), // value are dynamic if you pass int then on select method you will identified by Int. best option use enum .
+                    value: FilterOption.FilterOptionAll), // value are dynamic if you pass int then on select method you will identified by Int. best option us
+                      enum .
               ],
             ),
           ),
      ```
-
 ## showCupertinoModalPopup
     * Show cupertino ModalPopup is used for showing popup for iPhone.
     * It is used as modal in iOS device
