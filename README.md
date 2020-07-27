@@ -14,7 +14,7 @@
       where it has title (title of the alert) and Content (Message description) , and list of actions where you can define CupertinoDialogAction buttons.
       * CupertinoDialogAction has many property where you can define the  alert box cancel button ui.      
   ###### showCupertinoDialog Syntax 
-   ```
+    ```
      showCupertinoDialog(
       context: contex,      
       builder: (ctx) => CupertinoAlertDialog  
@@ -32,27 +32,27 @@
         )
       ],
     ),);
-  ``` 
+    ``` 
   
   
   ###### showDialog Syntax
-     Like wise showCupertinoDialog widget same for Android.That is showDialog.
-      * showDialog has contain mainly two property one is context and another is builder. Where context you have pass the widget context and builder where you               define the AlertDialog widget. 
+   Like wise showCupertinoDialog widget same for Android.That is showDialog.
+     * showDialog has contain mainly two property one is context and another is builder. Where context you have pass the widget context and builder where you               define the AlertDialog widget. 
       * AlertDialog widget has title where you can defein the alert title and ccontext where you can define the dialog message and list of action where you can
-         close and perform a Alert dialog .      
+         close and perform a Alert dialog.
          
-      ```
-      showDialog(
-      context: contex,
-      builder: (ctx) => AlertDialog(content:Text("This is the alert view") ,title: Text("Alert"),
-    actions: <Widget>[
-      FlatButton(onPressed: (){
-      }, child: Text("Ok")),
-      FlatButton(onPressed: (){
-      }, child: Text("Dismiss")),
-    ],
-    );
-    ``` 
+       ```
+           showDialog(
+            context: contex,
+            builder: (ctx) => AlertDialog(content:Text("This is the alert view") ,title: Text("Alert"),
+            actions: <Widget>[
+            FlatButton(onPressed: (){
+            }, child: Text("Ok")),
+            FlatButton(onPressed: (){
+            }, child: Text("Dismiss")),
+           ],
+           );
+      ``` 
  ## Snack bar 
 * Snackbar are basically used bottom of the view. Like showing message when user add or delete some thing.
    ###### Snack Syntax
@@ -90,17 +90,17 @@
     ```
      showCupertinoModalPopup(
       context: context,
-     builder:(context) => CupertinoActionSheet(  # title of the action sheet
-      title: Text(
+       builder:(context) => CupertinoActionSheet(  # title of the action sheet
+       title: Text(
         "Action Sheet",
         style: TextStyle(fontSize: 30),
       ),
       // message of the action sheet
-      message: Text(
+       message: Text(
         "Select any section",
         style: TextStyle(fontSize: 15.0),
-      ),
-      actions: <Widget>[
+       ),
+       actions: <Widget>[
         CupertinoActionSheetAction(
           onPressed: () {
             print(" action 1 click");
@@ -109,8 +109,8 @@
           isDefaultAction: true,
         ),
         
-      ],
-     cancelButton: CupertinoActionSheetAction(
+       ],
+       cancelButton: CupertinoActionSheetAction(
             onPressed: () {
             print(" action 1 click");
             Navigator.pop(ctx);
